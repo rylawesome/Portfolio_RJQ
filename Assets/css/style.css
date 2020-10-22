@@ -1,18 +1,98 @@
 .myName {
-    font-family: 'Times New Roman';
+    padding: 20px;
+    font-family: 'Lucida Console';
+    background-color: #2a204a;
+    color: #07cff6;
 }
 
-.content {
-    width: 75%;
+.myName h1 {
+    display: inline-block;
+    font-size: 50px;
+}
+
+.myName div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Calibri missing quotations but repeated throughout file, unknown if correct/incorrect, unchanged */
+    font-size: 15px;
+}
+
+.myName div ul li {
     display: inline-block;
     margin-left: 20px;
 }
 
-.seo {
+.myName div ul li a {
+    font-family: 'Lucida Console';
+    font-size: 20px;
+    color: #07cff6;
+    text-decoration: none;
+}
+
+.myName div ul li a:hover {
+    color: #c233b4;
+}
+
+.myImage {
+    display: block;
+    width: 100%;
+    height: 1000px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+  }
+
+.container:hover .overlay {
+    opacity: .9;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #dad9e0;
+  }
+
+.about-me h2 {
+    color: #2a204a;
+    font-family: 'Lucida Console';
+    font-size: 50px;
+    position: absolute;
+    top: 5%;
+    left: 45%;
+}
+
+.about-me p {
+    color: #2a204a;
+    font-family: 'Monaco';
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 5%;
+}
+
+.section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    font-family: 'Monospace';
+    background-color: #dad9e0;
+}
+
+.section h2 {
+    color: #07cff6;
+}
+
+.section h2 p{
+    color: #07cff6;
 }
