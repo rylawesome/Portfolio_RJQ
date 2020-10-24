@@ -134,9 +134,52 @@
     color: var(--dark-purple);
     font-family: 'monospace';
     font-size: 20px;
-    padding: 5px;
+    padding: 15px;
   }
 
 .myProjects a:hover {
+    color: var(--pink);
+}
+
+.contact {
+    font-family: var(--Console);
+    background-color: var(--dark-purple);
+    color: var(--Cyan);
+}
+
+.contact h1 {
+    padding: 10px;
+    display: inline-block;
+    font-size: 35px;
+}
+
+.contact ul {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+.contact ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.contact ul li p {
+    font-family: var(--Console);
+    font-size: 15px;
+    color: var(--Cyan);
+    text-decoration: none;
+}
+
+.contact ul li a {
+    font-family: var(--Console);
+    font-size: 20px;
+    color: var(--Cyan);
+    text-decoration: none;
+}
+
+.contact ul li a:hover {
     color: var(--pink);
 }
