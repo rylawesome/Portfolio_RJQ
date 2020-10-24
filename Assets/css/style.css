@@ -1,8 +1,15 @@
-.myName {
-    padding: 20px;
-    font-family: 'Lucida Console';
-    background-color: #2a204a;
-    color: #07cff6;
+:root {
+    --Cyan: #07cff6;
+    --dark-purple: #2a204a;
+    --pink: #c233b4;
+    --gray: #dad9e0;
+    --Console: 'Lucida Console'
+}
+
+.myName { /* Header info */
+    font-family: var(--Console);
+    background-color: var(--dark-purple);
+    color: var(--Cyan);
 }
 
 .myName h1 {
@@ -14,9 +21,11 @@
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Calibri missing quotations but repeated throughout file, unknown if correct/incorrect, unchanged */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
 }
+
+/* Next 3 classes work with list in top right of header */
 
 .myName div ul li {
     display: inline-block;
@@ -24,20 +33,22 @@
 }
 
 .myName div ul li a {
-    font-family: 'Lucida Console';
+    font-family: var(--Console);
     font-size: 20px;
-    color: #07cff6;
+    color: var(--Cyan);
     text-decoration: none;
 }
 
 .myName div ul li a:hover {
-    color: #c233b4;
+    color: var(--pink);
 }
+
+/* Image and About Me Overlay Section */
 
 .myImage {
     display: block;
     width: 100%;
-    height: 1000px;
+    height: auto;
 }
 
 .container {
@@ -46,7 +57,7 @@
   }
 
 .container:hover .overlay {
-    opacity: .9;
+    opacity: .8;
 }
 
 .overlay {
@@ -59,40 +70,73 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #dad9e0;
+    background-color: var(--gray);
   }
 
 .about-me h2 {
-    color: #2a204a;
-    font-family: 'Lucida Console';
+    color: var(--dark-purple);
+    font-family: var(--Console);
     font-size: 50px;
-    position: absolute;
-    top: 5%;
-    left: 45%;
+    position: relative;
+    padding: 20px;
+    text-align: center;
 }
 
 .about-me p {
-    color: #2a204a;
+    color: var(--dark-purple);
     font-family: 'Monaco';
     font-size: 20px;
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    right: 5%;
+    position: relative;
+    padding: 20px;
+    text-align: center;
 }
 
-.section {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Monospace';
-    background-color: #dad9e0;
+/* Defining other sections than About Me */
+
+.headerProjects {
+    background-color: var(--gray);
+    color: var(--dark-purple);
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
 }
 
-.section h2 {
-    color: #07cff6;
+/* Flex box for My projects section */
+
+.myProjects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: var(--gray);
 }
 
-.section h2 p{
-    color: #07cff6;
+.myProjects img {
+    width: 100%;
+    min-width: 100px;
+    max-width: 300px;
+}
+
+.myProjects a {
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    color: var(--Cyan);
+    background-color: var(--dark-purple);
+    font-family: 'Monaco';
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  .myProjects p {
+    position: relative;
+    text-align: center;
+    color: var(--dark-purple);
+    font-family: 'monospace';
+    font-size: 20px;
+    padding: 5px;
+  }
+
+.myProjects a:hover {
+    color: var(--pink);
 }
